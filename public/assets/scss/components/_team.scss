@@ -1,0 +1,48 @@
+.cardTeam {
+	margin-top: 40px;
+	padding: 10px;
+
+	&-image {
+		width: 270px;
+		height: 270px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 50%;
+	}
+
+	&-info {
+		margin-top: 22px;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+		width: 100%;
+		text-align: center;
+	}
+	&-name {
+		text-decoration: none;
+		font-size: 19px;
+		color: $rose;
+	}
+
+	&-job {
+		font-size: 18px;
+		font-family: $fontSecondary;
+		color: map-get($gray, darken);
+		font-weight: 300;
+	}
+
+	&-icons {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		list-style: none;
+		color: map-get($gray, semiDark);
+		padding: 0;
+
+		// &.icon {
+		// 	color: map-get($gray, semiDark);
+		// }
+	}
+}

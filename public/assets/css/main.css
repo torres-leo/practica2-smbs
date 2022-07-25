@@ -8375,7 +8375,7 @@ textarea.form-control-lg {
   padding: 0; }
 
 .card {
-  width: 366px;
+  width: 270px;
   height: 365px;
   padding: 40px 35px 45px;
   border: 0.5px solid #c2c2c3;
@@ -8447,7 +8447,16 @@ textarea.form-control-lg {
       cursor: pointer;
       border: none; }
   .button.outline {
-    background: transparent; }
+    width: 230px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    text-align: center; }
+    .button.outline:hover {
+      background-color: #6a0da6;
+      border: none; }
+    @media (max-width: 991.98px) {
+      .button.outline {
+        width: 210px; } }
 
 .Hero {
   display: flex;
@@ -8494,6 +8503,173 @@ textarea.form-control-lg {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     max-width: 450px; }
+
+.article {
+  display: flex;
+  flex: 1;
+  width: 100%; }
+  @media (max-width: 991.98px) {
+    .article {
+      flex-direction: column; } }
+  .article-content {
+    margin: 80px 0;
+    width: 100%; }
+  .article.reverse {
+    flex-direction: row-reverse; }
+    @media (max-width: 991.98px) {
+      .article.reverse {
+        flex-direction: column; } }
+  .article-info {
+    margin-left: 50px; }
+    @media (max-width: 991.98px) {
+      .article-info {
+        margin-left: 100px; } }
+    @media (max-width: 575.98px) {
+      .article-info {
+        margin-left: 30px; } }
+    .article-info.right {
+      margin-left: 120px; }
+      @media (max-width: 991.98px) {
+        .article-info.right {
+          margin-left: 100px; } }
+      @media (max-width: 575.98px) {
+        .article-info.right {
+          margin-left: 30px; } }
+  .article-title {
+    font-size: 34px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 0; }
+    .article-title::after {
+      content: '';
+      display: block;
+      margin: 20px 0;
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(to right, #ed1c94 70%, #981df0);
+      padding: 0; }
+  .article-description {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #838386;
+    font-weight: 300;
+    padding: 0;
+    max-width: 450px; }
+    @media (max-width: 991.98px) {
+      .article-description {
+        max-width: 630px; } }
+  .article-image {
+    height: 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    width: 100%; }
+
+.banner {
+  width: 100%;
+  padding: 75px 0;
+  background-color: #f2f3f9; }
+  .banner .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px; }
+    @media (max-width: 991.98px) {
+      .banner .content {
+        padding: 0 20px; } }
+    @media (max-width: 575.98px) {
+      .banner .content {
+        padding: 0 20px;
+        flex-direction: column; } }
+    .banner .content-consultation {
+      font-size: 34px;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      color: #ffec17;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+      @media (max-width: 575.98px) {
+        .banner .content-consultation {
+          font-size: 24px;
+          text-align: center; } }
+    .banner .content-text {
+      font-size: 19px;
+      font-family: "Lato", sans-serif;
+      margin-top: 20px;
+      color: #ffffff;
+      font-weight: 300; }
+      @media (max-width: 991.98px) {
+        .banner .content-text {
+          max-width: 500px; } }
+      @media (max-width: 575.98px) {
+        .banner .content-text {
+          max-width: 500px;
+          text-align: center; } }
+  .banner-title {
+    padding: 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #29293a;
+    letter-spacing: 2px; }
+    .banner-title::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(to right, #ed1c94 70%, #981df0);
+      margin: 20px auto; }
+    .banner-title.line-light {
+      color: #ffffff; }
+      .banner-title.line-light::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 1px;
+        background: linear-gradient(to right, #ed1c94 70%, #981df0);
+        margin: 20px auto; }
+  .banner.image {
+    background-image: url("https://livedemo00.template-help.com/wt_62466_v3/images/bg-09.jpg");
+    background-size: cover;
+    background-position: center center; }
+  .banner.background {
+    background: linear-gradient(to right, #6d0eb1 20%, #ed1c94); }
+
+.cardTeam {
+  margin-top: 40px;
+  padding: 10px; }
+  .cardTeam-image {
+    width: 270px;
+    height: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%; }
+  .cardTeam-info {
+    margin-top: 22px;
+    width: 100%;
+    text-align: center; }
+  .cardTeam-name {
+    text-decoration: none;
+    font-size: 19px;
+    color: #ed1c94; }
+  .cardTeam-job {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    color: #838386;
+    font-weight: 300; }
+  .cardTeam-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: #c2c2c3;
+    padding: 0; }
 
 .HomeContact {
   background: linear-gradient(to right, #6d0eb1 20%, #ed1c94);
@@ -8547,7 +8723,8 @@ textarea.form-control-lg {
   align-items: flex-start;
   padding: 80px 50px;
   width: 100%;
-  height: auto; }
+  height: auto;
+  flex: 1; }
   @media (max-width: 991.98px) {
     .HomePanel {
       flex-direction: column;
@@ -8566,8 +8743,8 @@ textarea.form-control-lg {
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: cover;
-    width: 720px;
-    height: 470px; }
+    width: 100%;
+    height: 360px; }
     @media (max-width: 991.98px) {
       .HomePanel-image {
         width: 100%;
@@ -8577,9 +8754,9 @@ textarea.form-control-lg {
         width: 345px;
         height: 220px; } }
   .HomePanel-info {
-    padding-left: 140px;
-    padding-right: 40px;
-    flex: 1; }
+    padding-left: 30px;
+    padding-right: 0px;
+    width: 100%; }
     @media (max-width: 991.98px) {
       .HomePanel-info {
         margin-bottom: 50px;
@@ -8587,7 +8764,7 @@ textarea.form-control-lg {
         order: 1; } }
   .HomePanel-title {
     font-family: "Oswald", sans-serif;
-    font-size: 48px;
+    font-size: 34px;
     letter-spacing: 2px;
     font-weight: 400; }
     .HomePanel-title::after {
@@ -8596,88 +8773,33 @@ textarea.form-control-lg {
       width: 100px;
       height: 3px;
       background: linear-gradient(to right, #ed1c94 70%, #981df0);
-      margin: 40px 0; }
+      margin: 20px 0; }
   .HomePanel-description {
     font-family: "Lato", sans-serif;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 300; }
     .HomePanel-description.light {
-      font-size: 19px;
+      font-size: 16px;
       color: #838386; }
 
-.content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-  .content.container-image {
-    padding: 0px 50px 0 30px; }
-  .content-image {
-    background-image: url("https://livedemo00.template-help.com/wt_62466_v3/images/landing-environment-2-720x459.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 620px;
-    height: 400px; }
-  .content-text {
-    max-width: 550px; }
-    .content-text-heading {
-      font-size: 48px;
-      font-family: "Oswald", sans-serif;
-      font-weight: 400;
-      letter-spacing: 2px; }
-      .content-text-heading::after {
-        content: '';
-        display: block;
-        margin: 40px 0px;
-        width: 20%;
-        height: 3px;
-        background: linear-gradient(to right, #ed1c94 70%, #981df0); }
-    .content-text-info {
-      font-size: 24px;
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      margin-top: 20px; }
-    .content-text-span {
-      font-size: 18px;
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      color: #838386; }
-
-.article {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .article-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 110px;
-    height: auto; }
-    .article-info.heading {
-      font-size: 48px;
-      font-family: "Oswald", sans-serif;
-      font-weight: 400;
-      letter-spacing: 2px;
-      padding: 0; }
-      .article-info.heading::after {
-        content: '';
-        display: block;
-        margin: 40px 0px;
-        width: 20%;
-        height: 3px;
-        background: linear-gradient(to right, #ed1c94 70%, #981df0);
-        padding: 0; }
-    .article-info.text {
-      font-family: "Lato", sans-serif;
-      font-size: 18px;
-      color: #838386;
-      font-weight: 300;
-      padding: 0; }
-  .article-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 550px; }
+.HomeTeam {
+  margin: 80px 45px; }
+  .HomeTeam-title {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px; }
+    .HomeTeam-title::after {
+      content: '';
+      display: block;
+      background: linear-gradient(to right, #ed1c94 70%, #981df0);
+      width: 100px;
+      height: 1px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.25; }
 
 /*# sourceMappingURL=main.css.map */

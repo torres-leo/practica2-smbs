@@ -1,0 +1,94 @@
+.banner {
+	width: 100%;
+	padding: 75px 0;
+	background-color: map-get($gray, light);
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 0 50px;
+
+		@include media-breakpoint-down(lg) {
+			padding: 0 20px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 20px;
+			flex-direction: column;
+		}
+
+		&-consultation {
+			font-size: 34px;
+			font-family: $fontPrimary;
+			font-weight: 400;
+			color: $yellow;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+
+			@include media-breakpoint-down(sm) {
+				font-size: 24px;
+				text-align: center;
+			}
+		}
+
+		&-text {
+			font-size: 19px;
+			font-family: $fontSecondary;
+			margin-top: 20px;
+			color: $white;
+			font-weight: 300;
+
+			@include media-breakpoint-down(lg) {
+				max-width: 500px;
+			}
+			@include media-breakpoint-down(sm) {
+				max-width: 500px;
+				text-align: center;
+			}
+		}
+	}
+
+	&-title {
+		padding: 0 15px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 34px;
+		font-family: $fontPrimary;
+		font-weight: 400;
+		color: $black;
+		letter-spacing: 2px;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 3px;
+			background: linear-gradient(to right, $rose 70%, map-get($indigo, light));
+			margin: 20px auto;
+		}
+
+		&.line-light {
+			color: $white;
+			&::after {
+				content: '';
+				display: block;
+				width: 100px;
+				height: 1px;
+				background: linear-gradient(to right, $rose 70%, map-get($indigo, light));
+				margin: 20px auto;
+			}
+		}
+	}
+
+	&.image {
+		background-image: url('https://livedemo00.template-help.com/wt_62466_v3/images/bg-09.jpg');
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&.background {
+		background: linear-gradient(to right, map-get($indigo, dark) 20%, $rose);
+	}
+}
