@@ -1,0 +1,11 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/variables';
+
+@import 'components/card';
+@import 'components/button';
+@import 'components/hero';
+
+@import 'page/home';
+@import 'page/article';

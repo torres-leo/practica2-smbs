@@ -1,0 +1,64 @@
+.Hero {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	align-items: center;
+	background-color: map-get($gray, light);
+
+	@include media-breakpoint-down(md) {
+		flex-direction: column;
+	}
+
+	&-image {
+		width: 100%;
+		height: 550px;
+		background-image: url('https://livedemo00.template-help.com/wt_62466_v3/images/landing-environment-1-960x870.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&-info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 24px;
+		font-family: $fontSecondary;
+		padding: 60px 0;
+
+		// @include media-breakpoint-down(md) {
+		// 	padding: 0;
+		// }
+	}
+
+	&-title {
+		max-width: 250px;
+		width: 100%;
+		font-size: 34px;
+		font-family: $fontPrimary;
+		text-align: center;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 1px;
+			background: linear-gradient(to right, $rose 70%, map-get($indigo, light));
+			margin: 40px auto 18px auto;
+			opacity: 0.25;
+		}
+	}
+
+	&-description {
+		text-align: center;
+		font-size: 19px;
+		font-family: $fontSecondary;
+		font-weight: 300;
+		max-width: 450px;
+
+		@include media-breakpoint-down(md) {
+		}
+	}
+}
