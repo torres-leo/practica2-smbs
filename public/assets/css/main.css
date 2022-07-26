@@ -8640,36 +8640,65 @@ textarea.form-control-lg {
   .banner.background {
     background: linear-gradient(to right, #6d0eb1 20%, #ed1c94); }
 
-.cardTeam {
-  margin-top: 40px;
-  padding: 10px; }
-  .cardTeam-image {
+.team {
+  width: 100%;
+  padding: 80px 25px; }
+  .team-title {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px; }
+    .team-title::after {
+      content: '';
+      display: block;
+      background: linear-gradient(to right, #ed1c94 70%, #981df0);
+      width: 100px;
+      height: 1px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.25; }
+  .team.itemTeam {
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .team-image {
     width: 270px;
     height: 270px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%; }
-  .cardTeam-info {
-    margin-top: 22px;
-    width: 100%;
-    text-align: center; }
-  .cardTeam-name {
+  .team-name {
     text-decoration: none;
     font-size: 19px;
-    color: #ed1c94; }
-  .cardTeam-job {
+    color: #ed1c94;
+    text-align: center;
+    margin-top: 20px; }
+  .team-job {
     font-size: 18px;
     font-family: "Lato", sans-serif;
     color: #838386;
     font-weight: 300; }
-  .cardTeam-icons {
+  .team-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style: none;
-    color: #c2c2c3;
-    padding: 0; }
+    padding: 0 80px;
+    width: 100%; }
+    .team-icons.icon {
+      padding: 0;
+      list-style: none;
+      color: #c2c2c3;
+      color: #c2c2c3; }
+      .team-icons.icon:hover {
+        color: #ed1c94; }
 
 .HomeContact {
   background: linear-gradient(to right, #6d0eb1 20%, #ed1c94);
@@ -8781,25 +8810,5 @@ textarea.form-control-lg {
     .HomePanel-description.light {
       font-size: 16px;
       color: #838386; }
-
-.HomeTeam {
-  margin: 80px 45px; }
-  .HomeTeam-title {
-    text-transform: uppercase;
-    font-size: 34px;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px; }
-    .HomeTeam-title::after {
-      content: '';
-      display: block;
-      background: linear-gradient(to right, #ed1c94 70%, #981df0);
-      width: 100px;
-      height: 1px;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      opacity: 0.25; }
 
 /*# sourceMappingURL=main.css.map */
