@@ -21,6 +21,7 @@
 	}
 
 	&.primary {
+		border: none;
 		padding: 14px 60px;
 	}
 
@@ -52,5 +53,12 @@
 		@include media-breakpoint-down(lg) {
 			width: 210px;
 		}
+	}
+
+	&.footer {
+		border: none;
+		margin-top: 0;
+		margin-left: -50px;
+		padding: 10px 25px;
 	}
 }

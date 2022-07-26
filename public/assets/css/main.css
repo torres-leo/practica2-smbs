@@ -8435,6 +8435,7 @@ textarea.form-control-lg {
     cursor: pointer;
     border: none; }
   .button.primary {
+    border: none;
     padding: 14px 60px; }
   .button.secondary {
     padding: 14px 60px;
@@ -8457,6 +8458,11 @@ textarea.form-control-lg {
     @media (max-width: 991.98px) {
       .button.outline {
         width: 210px; } }
+  .button.footer {
+    border: none;
+    margin-top: 0;
+    margin-left: -50px;
+    padding: 10px 25px; }
 
 .Hero {
   display: flex;
@@ -8702,40 +8708,208 @@ textarea.form-control-lg {
         color: #ed1c94;
         cursor: pointer; }
 
-.footer {
-  padding: 40px 10px;
+.Footer {
+  padding: 40px 30px;
   background: #29293a;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%; }
-  .footer-title {
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto; }
+  .Footer-titles {
     font-family: "Oswald", sans-serif;
-    font-size: 34px;
+    text-transform: uppercase;
+    font-size: 19px;
     font-weight: 400;
     letter-spacing: 2px; }
-  .footer-content {
-    width: 100%; }
-  .footer.about {
+  .Footer-content {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 40px; }
+    @media (max-width: 575.98px) {
+      .Footer-content {
+        margin-top: 0; } }
+  .FooterAbout {
     padding: 0;
+    padding-right: 20px;
     margin-top: 20px;
+    margin-bottom: 0;
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 300; }
-  .footer.gallery {
+    @media (max-width: 575.98px) {
+      .FooterAbout {
+        margin-bottom: 40px; } }
+  .FooterGallery {
+    padding: 0;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0;
-    margin-top: 20px; }
-    .footer.gallery.image {
-      width: 30px !important;
-      height: 30px !important;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px; }
+    @media (max-width: 575.98px) {
+      .FooterGallery {
+        padding: 0;
+        margin-bottom: 40px; } }
+    .FooterGallery.imageContainer {
+      position: relative;
+      display: inline-block;
+      width: 80px;
+      padding: 0;
+      margin: 0; }
+      .FooterGallery.imageContainer .after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        color: #fff; }
+      .FooterGallery.imageContainer:hover .after {
+        display: block;
+        background: rgba(0, 0, 0, 0.6); }
+    .FooterGallery-image {
+      margin: 0;
+      padding: 0;
+      width: 80px;
+      height: 80px;
+      display: block;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
       object-fit: cover;
-      width: 100%; }
+      transition: 0.5s ease;
+      backface-visibility: hidden; }
+    .FooterGallery.middle {
+      transition: 0.5s ease;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center; }
+    .FooterGallery.plus {
+      background-color: #04aa6d;
+      color: white;
+      font-size: 26px; }
+  .FooterContact {
+    margin-top: 20px;
+    padding: 0;
+    padding-right: 40px; }
+    @media (max-width: 575.98px) {
+      .FooterContact {
+        margin-bottom: 40px; } }
+    .FooterContact-items {
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 0;
+      margin-bottom: 20px; }
+    .FooterContact.icon {
+      margin: 0;
+      padding: 0 6px;
+      color: #ed1c94; }
+    .FooterContact.text {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0 6px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 16px;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      transition: color ease-in-out 0.2s; }
+      .FooterContact.text:hover {
+        color: #981df0;
+        cursor: pointer; }
+    .FooterContact-socials {
+      margin-top: 35px;
+      display: flex;
+      padding-left: 6px;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 180px; }
+    .FooterContact-link {
+      margin: 0;
+      color: #838386; }
+      .FooterContact-link.facebook:hover {
+        color: #3e5a86; }
+      .FooterContact-link.twitter:hover {
+        color: #008ee0; }
+      .FooterContact-link.instagram:hover {
+        color: #c13584; }
+      .FooterContact-link.google:hover {
+        color: #b53418; }
+      .FooterContact-link.linkedin:hover {
+        color: #116584; }
+  .FooterNews {
+    margin-top: 20px;
+    width: 100%; }
+    .FooterNews-form {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .FooterNews-text {
+      font-size: 16px;
+      font-family: "Lato", sans-serif;
+      font-weight: 300; }
+    .FooterNews-input {
+      padding: 10px 18px;
+      padding-left: 25px;
+      border: none;
+      border-radius: 35px; }
+  .FooterNav {
+    margin-top: 30px;
+    padding: 30px 10px;
+    border-top: 1px solid #838386;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1; }
+    .FooterNav-navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      @media (max-width: 991.98px) {
+        .FooterNav-navbar {
+          width: 100%; } }
+    .FooterNav.link {
+      border: none;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: #c2c2c3;
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-right: 25px; }
+    .FooterNav-copyright {
+      border: none;
+      text-align: end;
+      margin-bottom: 0; }
+      @media (max-width: 991.98px) {
+        .FooterNav-copyright {
+          margin-top: 20px; } }
+    .FooterNav.text {
+      width: 100%;
+      border: none;
+      margin: 0;
+      padding: 0;
+      text-align: end;
+      color: #838386;
+      font-family: "Lato", sans-serif;
+      font-weight: 300; }
 
 .HomeContact {
   background: linear-gradient(to right, #6d0eb1 20%, #ed1c94);
