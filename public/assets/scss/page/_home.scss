@@ -144,29 +144,4 @@
 			}
 		}
 	}
-
-	// &Team {
-	// 	margin: 80px 45px;
-
-	// 	&-title {
-	// 		text-transform: uppercase;
-	// 		font-size: 34px;
-	// 		font-family: $fontPrimary;
-	// 		text-align: center;
-	// 		font-weight: 400;
-	// 		letter-spacing: 2px;
-
-	// 		&::after {
-	// 			content: '';
-	// 			display: block;
-	// 			background: linear-gradient(to right, $rose 70%, map-get($indigo, light));
-	// 			width: 100px;
-	// 			height: 1px;
-	// 			margin-top: 20px;
-	// 			margin-left: auto;
-	// 			margin-right: auto;
-	// 			opacity: 0.25;
-	// 		}
-	// 	}
-	// }
 }
