@@ -8893,7 +8893,10 @@ textarea.form-control-lg {
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 2px;
-      padding-right: 25px; }
+      padding-right: 25px;
+      transition: color ease-in-out 0.2s; }
+      .FooterNav.link:hover {
+        color: #981df0; }
     .FooterNav-copyright {
       border: none;
       text-align: end;
