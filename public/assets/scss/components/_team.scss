@@ -45,9 +45,15 @@
 	&-name {
 		text-decoration: none;
 		font-size: 19px;
+		font-family: $fontSecondary;
+		font-weight: 400;
 		color: $rose;
 		text-align: center;
 		margin-top: 20px;
+		transition: color ease-in-out 0.2s;
+		&:hover {
+			color: map-get($indigo, light);
+		}
 	}
 
 	&-job {

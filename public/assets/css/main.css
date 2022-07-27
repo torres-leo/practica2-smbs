@@ -8684,9 +8684,14 @@ textarea.form-control-lg {
   .team-name {
     text-decoration: none;
     font-size: 19px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     color: #ed1c94;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: color ease-in-out 0.2s; }
+    .team-name:hover {
+      color: #981df0; }
   .team-job {
     font-size: 18px;
     font-family: "Lato", sans-serif;
@@ -8758,33 +8763,21 @@ textarea.form-control-lg {
         margin-bottom: 40px; } }
     .FooterGallery-imageContainer {
       position: relative;
-      max-width: 80px; }
-      .FooterGallery-imageContainer:hover.overlay {
-        opacity: 0.5; }
-    .FooterGallery-overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
       max-width: 80px;
-      opacity: 0;
-      transition: 0.3s ease;
-      background-color: #981df0; }
-      .FooterGallery-overlay:hover {
-        opacity: 0.7;
-        cursor: pointer; }
-    .FooterGallery-plus {
-      color: white;
-      font-size: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-      margin: 0; }
+      max-height: 80px;
+      z-index: 1; }
+      .FooterGallery-imageContainer:hover {
+        background: #981df0; }
+      .FooterGallery-imageContainer::before {
+        content: '+';
+        z-index: -1;
+        position: absolute;
+        display: block;
+        font-size: 20px;
+        margin: 28px 34px; }
+        .FooterGallery-imageContainer::before:hover {
+          background: purple;
+          color: purple; }
     .FooterGallery-image {
       margin: 0;
       padding: 0;
@@ -8795,6 +8788,14 @@ textarea.form-control-lg {
       background-position: center center;
       background-repeat: no-repeat;
       object-fit: cover; }
+    .FooterGallery-modal {
+      width: 100%;
+      cursor: pointer;
+      transition: 0.3s; }
+      .FooterGallery-modal:hover {
+        background: #981df0;
+        z-index: 1;
+        opacity: 0.25; }
   .FooterContact {
     margin-top: 20px;
     padding: 0;
@@ -8910,16 +8911,6 @@ textarea.form-control-lg {
       font-family: "Lato", sans-serif;
       font-weight: 300; }
 
-.modal-target {
-  width: 100%;
-  cursor: pointer;
-  transition: 0.3s; }
-
-.modal-target:hover {
-  background: #981df0;
-  z-index: 1;
-  opacity: 0.25; }
-
 /* The Modal (background) */
 .modal {
   display: none;
@@ -8939,42 +8930,41 @@ textarea.form-control-lg {
   overflow: auto;
   /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.9);
-  /* Fallback color */ }
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 200px;
-  height: 200px;
-  opacity: 1;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  object-fit: cover; }
-
-/* Caption of Modal Image */
-.modal-caption {
-  margin: auto;
-  display: block;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  margin-top: 32px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
-
-/* Add Animation */
-.modal-content,
-.modal-caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s; }
+  /* Fallback color */
+  /* Modal Content (image) */
+  /* Caption of Modal Image */
+  /* The Close Button */ }
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 720px;
+    height: 720px;
+    opacity: 1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s; }
+  .modal-caption {
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 32px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s; }
 
 @-webkit-keyframes zoom {
   from {
@@ -8987,22 +8977,18 @@ textarea.form-control-lg {
     transform: scale(0); }
   to {
     transform: scale(1); } }
-
-/* The Close Button */
-.modal-close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s; }
-
-.modal-close:hover,
-.modal-close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer; }
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s; }
+    .modal-close:hover, .modal-close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer; }
 
 .HomeContact {
   background: linear-gradient(to right, #6d0eb1 20%, #ed1c94);

@@ -21,7 +21,7 @@ modalClose.addEventListener('click', function () {
 
 // global handler
 document.addEventListener('click', function (e) {
-	if (e.target.className.indexOf('modal-target') !== -1) {
+	if (e.target.className.indexOf('FooterGallery-modal') !== -1) {
 		var img = e.target;
 		var modalImg = document.getElementById('modal-content');
 		var captionText = document.getElementById('modal-caption');
