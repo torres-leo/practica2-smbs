@@ -224,50 +224,17 @@
 
 	&Nav {
 		margin-top: 30px;
-		padding: 30px 10px;
+		padding: 35px 0px;
 		border-top: 1px solid map-get($gray, darken);
 		padding-bottom: 0;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: center;
 		flex-wrap: wrap;
 		flex: 1;
-		@include media-breakpoint-down(lg) {
-			// flex-direction: column;
-		}
-
-		&-navbar {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-items: center;
-			// width: 100%;
-
-			@include media-breakpoint-down(lg) {
-				width: 100%;
-			}
-			@include media-breakpoint-down(sm) {
-				// display: hidden;
-				// opacity: 0;
-			}
-		}
-		&.link {
-			border: none;
-			margin: 0;
-			padding: 0;
-			text-decoration: none;
-			color: map-get($gray, semiDark);
-			font-family: $fontPrimary;
-			font-weight: 300;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			padding-right: 25px;
-			transition: color ease-in-out 0.2s;
-
-			&:hover {
-				color: map-get($indigo, light);
-			}
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
 		}
 
 		&-copyright {
@@ -277,6 +244,7 @@
 			margin-bottom: 0;
 
 			@include media-breakpoint-down(lg) {
+				// border: none;
 				margin-top: 20px;
 			}
 		}

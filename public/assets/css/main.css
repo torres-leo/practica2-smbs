@@ -8866,37 +8866,18 @@ textarea.form-control-lg {
       border-radius: 35px; }
   .FooterNav {
     margin-top: 30px;
-    padding: 30px 10px;
+    padding: 35px 0px;
     border-top: 1px solid #838386;
     padding-bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     flex: 1; }
-    .FooterNav-navbar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center; }
-      @media (max-width: 991.98px) {
-        .FooterNav-navbar {
-          width: 100%; } }
-    .FooterNav.link {
-      border: none;
-      margin: 0;
-      padding: 0;
-      text-decoration: none;
-      color: #c2c2c3;
-      font-family: "Oswald", sans-serif;
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      padding-right: 25px;
-      transition: color ease-in-out 0.2s; }
-      .FooterNav.link:hover {
-        color: #981df0; }
+    @media (max-width: 575.98px) {
+      .FooterNav {
+        flex-direction: column; } }
     .FooterNav-copyright {
       border: none;
       text-align: end;
@@ -8951,6 +8932,11 @@ textarea.form-control-lg {
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s; }
+    @media (max-width: 575.98px) {
+      .modal-content {
+        margin-top: 140px;
+        width: 320px;
+        height: 320px; } }
   .modal-caption {
     margin: auto;
     display: block;
@@ -8992,6 +8978,41 @@ textarea.form-control-lg {
       color: #bbb;
       text-decoration: none;
       cursor: pointer; }
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .Navbar-icon, .Navbar-label {
+    display: none; }
+  .Navbar-icon:checked ~ .Navbar-links {
+    display: block; }
+  @media (max-width: 575.98px) {
+    .Navbar-label {
+      display: inline-block; } }
+  .Navbar-links {
+    list-style: none;
+    padding: 0;
+    display: flex; }
+    @media (max-width: 575.98px) {
+      .Navbar-links {
+        display: none;
+        margin-left: 30px; } }
+  .Navbar-link {
+    text-decoration: none;
+    padding-right: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    @media (max-width: 575.98px) {
+      .Navbar-link {
+        display: block;
+        width: 100%;
+        box-sizing: border-box; } }
+    .Navbar-link:hover {
+      color: #981df0; }
 
 .HomeContact {
   background: linear-gradient(to right, #6d0eb1 20%, #ed1c94);

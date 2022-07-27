@@ -1,16 +1,3 @@
-// document.querySelectorAll('.modal img').forEach((image) => {
-// 	image.addEventListener('click', function (e) {
-// 		this.parentNode.classList.add('active');
-// 	});
-// });
-
-// document.querySelectorAll('.modal').forEach((image) => {
-// 	image.addEventListener('click', function (e) {
-// 		this.classList.remove('active');
-// 		console.log('click');
-// 	});
-// });
-
 // Modal Setup
 var modal = document.getElementById('modal');
 
