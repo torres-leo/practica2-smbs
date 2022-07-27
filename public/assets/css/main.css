@@ -4,7 +4,7 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8375,7 +8375,7 @@ textarea.form-control-lg {
   padding: 0; }
 
 .card {
-  width: 270px;
+  width: 390px;
   height: 365px;
   padding: 40px 35px 45px;
   border: 0.5px solid #c2c2c3;
@@ -8475,7 +8475,7 @@ textarea.form-control-lg {
       flex-direction: column; } }
   .Hero-image {
     width: 100%;
-    height: 550px;
+    height: 720px;
     background-image: url("https://livedemo00.template-help.com/wt_62466_v3/images/landing-environment-1-960x870.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -8490,25 +8490,34 @@ textarea.form-control-lg {
     font-family: "Lato", sans-serif;
     padding: 60px 0; }
   .Hero-title {
-    max-width: 250px;
+    max-width: 340px;
     width: 100%;
-    font-size: 34px;
+    font-size: 48px;
     font-family: "Oswald", sans-serif;
-    text-align: center; }
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.45;
+    letter-spacing: 4px; }
+    .Hero-title .lighter {
+      font-weight: 200; }
     .Hero-title::after {
       content: '';
       display: block;
       width: 100px;
       height: 1px;
       background: linear-gradient(to right, #ed1c94 70%, #981df0);
-      margin: 40px auto 18px auto;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
       opacity: 0.25; }
   .Hero-description {
     text-align: center;
-    font-size: 19px;
+    font-size: 24px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    max-width: 450px; }
+    max-width: 600px;
+    margin-top: 40px;
+    margin-bottom: 0; }
 
 .article {
   display: flex;
@@ -9025,16 +9034,17 @@ textarea.form-control-lg {
     color: #ffffff;
     padding: 0 10px; }
   .HomeContact-hot {
+    font-size: 16px;
     padding: 5px 18px;
     background-color: #981df0;
     font-weight: 700;
     margin-right: 18px; }
   .HomeContact-brave {
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 300; }
   .HomeContact-link {
     text-decoration: none;
-    font-size: 19px;
+    font-size: 24px;
     color: #ffec17;
     font-weight: 700; }
     .HomeContact-link:hover {

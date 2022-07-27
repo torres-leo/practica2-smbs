@@ -11,7 +11,7 @@
 
 	&-image {
 		width: 100%;
-		height: 550px;
+		height: 720px;
 		background-image: url('https://livedemo00.template-help.com/wt_62466_v3/images/landing-environment-1-960x870.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -34,11 +34,18 @@
 	}
 
 	&-title {
-		max-width: 250px;
+		max-width: 340px;
 		width: 100%;
-		font-size: 34px;
+		font-size: 48px;
 		font-family: $fontPrimary;
+		font-weight: 400;
 		text-align: center;
+		line-height: 1.45;
+		letter-spacing: 4px;
+
+		.lighter {
+			font-weight: 200;
+		}
 
 		&::after {
 			content: '';
@@ -46,19 +53,20 @@
 			width: 100px;
 			height: 1px;
 			background: linear-gradient(to right, $rose 70%, map-get($indigo, light));
-			margin: 40px auto 18px auto;
+			margin-top: 40px;
+			margin-left: auto;
+			margin-right: auto;
 			opacity: 0.25;
 		}
 	}
 
 	&-description {
 		text-align: center;
-		font-size: 19px;
+		font-size: 24px;
 		font-family: $fontSecondary;
 		font-weight: 300;
-		max-width: 450px;
-
-		@include media-breakpoint-down(md) {
-		}
+		max-width: 600px;
+		margin-top: 40px;
+		margin-bottom: 0;
 	}
 }
