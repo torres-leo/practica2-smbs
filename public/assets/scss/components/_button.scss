@@ -5,12 +5,18 @@
 	font-weight: 400;
 	border-radius: 30px;
 	text-decoration: none;
+	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	background-color: $rose;
 	color: $white;
-	padding: 14px 38px;
 	margin-top: 25px;
+	padding: 14px 38px;
+	max-width: 252px;
+
+	@include media-breakpoint-down(lg) {
+		font-size: 15px;
+	}
 
 	&:hover {
 		background-color: map-get($indigo, light);
@@ -22,14 +28,22 @@
 
 	&.primary {
 		border: none;
-		padding: 14px 60px;
+		width: 230px;
+
+		@include media-breakpoint-down(lg) {
+			width: 210px;
+		}
 	}
 
 	&.secondary {
-		padding: 14px 60px;
+		width: 230px;
 		background-color: $white;
-		// border: 1px solid map-get($gray, regular);
+		border: 2px solid map-get($gray, regular);
 		color: $black;
+
+		@include media-breakpoint-down(lg) {
+			width: 210px;
+		}
 
 		&:hover {
 			background-color: map-get($indigo, light);
@@ -59,6 +73,6 @@
 		border: none;
 		margin-top: 0;
 		margin-left: -60px;
-		padding: 10px 30px;
+		// padding: 10px 30px;
 	}
 }
