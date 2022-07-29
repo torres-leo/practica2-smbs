@@ -9133,9 +9133,13 @@ textarea.form-control-lg {
   align-items: center;
   flex-wrap: wrap;
   flex: 1; }
+  @media (max-width: 991.98px) {
+    .Navbar {
+      flex-direction: row; } }
   @media (max-width: 575.98px) {
     .Navbar {
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: flex-start; } }
   .Navbar-copyright {
     border: none;
     text-align: end;
@@ -9155,8 +9159,12 @@ textarea.form-control-lg {
       font-weight: 300; }
   .Navbar-icon, .Navbar-label {
     display: none; }
-  .Navbar-icon:checked ~ .Navbar-links {
-    display: block; }
+  @media (max-width: 991.98px) {
+    .Navbar-icon:checked ~ .Navbar-links {
+      display: flex; } }
+  @media (max-width: 575.98px) {
+    .Navbar-icon:checked ~ .Navbar-links {
+      display: block; } }
   @media (max-width: 575.98px) {
     .Navbar-label {
       display: inline-block; } }
@@ -9171,7 +9179,7 @@ textarea.form-control-lg {
     @media (max-width: 575.98px) {
       .Navbar-links {
         display: none;
-        margin-left: 30px;
+        margin-left: 0px;
         width: 100px; } }
   .Navbar-link {
     text-decoration: none;
@@ -9185,7 +9193,8 @@ textarea.form-control-lg {
       .Navbar-link {
         display: block;
         width: 100%;
-        box-sizing: border-box; } }
+        box-sizing: border-box;
+        padding: 4px 0px; } }
     .Navbar-link:hover {
       color: #981df0; }
 
