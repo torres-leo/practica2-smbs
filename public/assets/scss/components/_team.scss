@@ -1,10 +1,25 @@
 .team {
 	width: 100%;
-	padding: 80px 25px;
+	padding: 125px 25px;
+
+	@include media-breakpoint-down(lg) {
+		padding: 80px 0 0px;
+	}
+
+	&-cards {
+		margin-top: 85px;
+		padding: 0 38px;
+		width: 100%;
+
+		@include media-breakpoint-down(lg) {
+			padding: 0;
+			margin-top: 40px;
+		}
+	}
 
 	&-title {
 		text-transform: uppercase;
-		font-size: 34px;
+		font-size: 48px;
 		font-family: $fontPrimary;
 		text-align: center;
 		font-weight: 400;
@@ -23,19 +38,22 @@
 		}
 	}
 
-	&.itemTeam {
-		margin-top: 40px;
+	.itemTeam {
 		padding: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&-image {
-		width: 270px;
-		height: 270px;
+		width: 300px;
+		height: 300px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -44,7 +62,7 @@
 
 	&-name {
 		text-decoration: none;
-		font-size: 19px;
+		font-size: 24px;
 		font-family: $fontSecondary;
 		font-weight: 400;
 		color: $rose;
@@ -61,18 +79,26 @@
 		font-family: $fontSecondary;
 		color: map-get($gray, darken);
 		font-weight: 300;
+		margin-bottom: 0;
 	}
 
-	&-icons {
+	.container-icons {
 		display: flex;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
-		padding: 0 30px;
+		padding: 0 100px;
+		margin-bottom: 0;
 		width: 100%;
+		list-style: none;
+		margin-top: 15px;
 
-		&.icon {
+		@include media-breakpoint-down(lg) {
+			padding: 0 50px;
+		}
+
+		.icon {
 			padding: 0;
-			list-style: none;
+			font-size: 20px;
 			color: map-get($gray, semiDark);
 			color: map-get($gray, semiDark);
 			&:hover {

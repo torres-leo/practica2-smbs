@@ -1,8 +1,42 @@
 .Navbar {
-	// width: 100%;
+	margin-top: 60px;
+	padding: 45px 0px 0px;
+	border-top: 1px solid map-get($gray, darken);
+	padding-bottom: 0;
+	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
+	flex: 1;
+
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+	}
+
+	&-copyright {
+		border: none;
+		// width: 100%;
+		text-align: end;
+		margin-bottom: 0;
+
+		@include media-breakpoint-down(lg) {
+			// border: none;
+			margin-top: 20px;
+		}
+
+		.text {
+			width: 100%;
+			border: none;
+			margin: 0;
+			padding: 0;
+			text-align: end;
+			color: map-get($gray, darken);
+			font-size: 18px;
+			font-family: $fontSecondary;
+			font-weight: 300;
+		}
+	}
 
 	&-icon,
 	&-label {
@@ -24,19 +58,25 @@
 		list-style: none;
 		padding: 0;
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 720px;
+		margin-bottom: 0;
 
 		@include media-breakpoint-down(sm) {
 			display: none;
 			margin-left: 30px;
+			width: 100px;
 		}
 	}
 
 	&-link {
 		text-decoration: none;
-		padding-right: 25px;
+		// padding-right: 25px;
 		color: $white;
 		text-transform: uppercase;
 		font-family: $fontPrimary;
+		font-size: 18px;
 		font-weight: 300;
 		letter-spacing: 2px;
 
