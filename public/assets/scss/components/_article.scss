@@ -58,11 +58,11 @@
 
 			@include media-breakpoint-down(xl) {
 				margin-left: 60px;
-				// margin: 0 100px;
 			}
 			@include media-breakpoint-down(lg) {
 				margin-left: 0;
-				margin: 0 100px;
+				margin-left: 100px;
+				margin-right: 100px;
 			}
 
 			@include media-breakpoint-down(sm) {
