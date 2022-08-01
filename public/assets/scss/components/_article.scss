@@ -23,7 +23,10 @@
 	}
 
 	&-info {
-		padding: 125px 0;
+		padding-top: 125px;
+		padding-bottom: 125px;
+		padding-left: 0;
+		padding-right: 0;
 		margin-right: 172px;
 		margin-left: 217px;
 		max-width: 900px;
@@ -31,7 +34,10 @@
 
 		@include media-breakpoint-down(xl) {
 			margin: 0;
-			padding: 80px 40px;
+			padding-top: 80px;
+			padding-bottom: 80px;
+			padding-right: 40px;
+			padding-left: 40px;
 			// width: auto;
 		}
 		@include media-breakpoint-down(lg) {
