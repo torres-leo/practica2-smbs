@@ -27,6 +27,11 @@
 		animation-name: zoom;
 		animation-duration: 0.6s;
 
+		@include media-breakpoint-down(xl) {
+			width: 480px;
+			height: 480px;
+		}
+
 		@include media-breakpoint-down(sm) {
 			margin-top: 140px;
 			width: 320px;
@@ -90,10 +95,3 @@
 		}
 	}
 }
-
-// .modal-close:hover,
-// .modal-close:focus {
-// 	color: #bbb;
-// 	text-decoration: none;
-// 	cursor: pointer;
-// }

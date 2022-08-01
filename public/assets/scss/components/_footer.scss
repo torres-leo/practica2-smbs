@@ -9,9 +9,16 @@
 	width: 100%;
 	height: auto;
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xl) {
+		padding-top: 90px;
 		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 40px;
 	}
+
+	// @include media-breakpoint-down(lg) {
+	// 	padding-left: 20px;
+	// }
 
 	&-titles {
 		font-family: $fontPrimary;
@@ -19,6 +26,7 @@
 		font-size: 24px;
 		font-weight: 400;
 		letter-spacing: 2px;
+		margin-bottom: 30px;
 	}
 
 	&-content {
@@ -27,6 +35,9 @@
 		padding: 0 10px;
 		margin-top: 40px;
 
+		@include media-breakpoint-down(xl) {
+			padding-left: 25px;
+		}
 		@include media-breakpoint-down(sm) {
 			margin-top: 0;
 		}
@@ -35,7 +46,6 @@
 	&About {
 		padding: 0;
 		padding-right: 20px;
-		margin-top: 30px;
 		margin-bottom: 0;
 		font-family: $fontSecondary;
 		font-size: 18px;
@@ -53,13 +63,16 @@
 
 	&Gallery {
 		padding: 0;
-		margin-top: 20px;
 		margin-right: 0;
 		display: grid;
 		grid-template-columns: repeat(3, 99.98px);
 		grid-template-rows: repeat(2, 1fr);
 		grid-column-gap: 15px;
 		grid-row-gap: 15px;
+
+		@include media-breakpoint-down(xl) {
+			// padding-left: 20px;
+		}
 
 		@include media-breakpoint-down(sm) {
 			padding: 0;
@@ -116,9 +129,9 @@
 	}
 
 	&Contact {
-		margin-top: 20px;
 		padding: 0;
 		padding-right: 40px;
+		margin-bottom: 0;
 
 		@include media-breakpoint-down(sm) {
 			margin-bottom: 40px;
@@ -211,7 +224,6 @@
 	}
 
 	&News {
-		margin-top: 20px;
 		width: 100%;
 
 		&-form {
@@ -226,7 +238,7 @@
 			font-size: 18px;
 			font-family: $fontSecondary;
 			font-weight: 300;
-			width: 300px;
+			width: 360px;
 
 			@include media-breakpoint-down(lg) {
 				font-size: 15px;
@@ -240,44 +252,11 @@
 			text-align: center;
 			font-size: 18px;
 			font-weight: 300;
+			// border: none;
+			border-radius: 35px;
+			text-align: left;
+			padding-left: 20px;
+			outline: none;
 		}
 	}
-
-	// &Nav {
-	// 	margin-top: 60px;
-	// 	padding: 35px 0px;
-	// 	border-top: 1px solid map-get($gray, darken);
-	// 	padding-bottom: 0;
-	// 	width: 100%;
-	// 	display: flex;
-	// 	justify-content: space-between;
-	// 	align-items: center;
-	// 	flex-wrap: wrap;
-	// 	flex: 1;
-	// 	@include media-breakpoint-down(sm) {
-	// 		flex-direction: column;
-	// 	}
-
-	// 	&-copyright {
-	// 		border: none;
-	// 		// width: 100%;
-	// 		text-align: end;
-	// 		margin-bottom: 0;
-
-	// 		@include media-breakpoint-down(lg) {
-	// 			// border: none;
-	// 			margin-top: 20px;
-	// 		}
-	// 	}
-	// 	&.text {
-	// 		width: 100%;
-	// 		border: none;
-	// 		margin: 0;
-	// 		padding: 0;
-	// 		text-align: end;
-	// 		color: map-get($gray, darken);
-	// 		font-family: $fontSecondary;
-	// 		font-weight: 300;
-	// 	}
-	// }
 }

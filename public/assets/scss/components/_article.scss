@@ -4,6 +4,7 @@
 	align-items: flex-start;
 	flex: 1;
 	width: 100%;
+	height: auto;
 
 	@include media-breakpoint-down(lg) {
 		flex-direction: column;
@@ -28,15 +29,25 @@
 		max-width: 900px;
 		// width: 600px;
 
+		@include media-breakpoint-down(xl) {
+			margin: 0;
+			padding: 80px 40px;
+			// width: auto;
+		}
 		@include media-breakpoint-down(lg) {
 			margin: 0;
-			padding: 80px 0;
-			margin: 0 100px;
-			width: auto;
+			padding-top: 80px;
+			padding-bottom: 80;
+			margin-left: 100px;
+			margin-right: 100px;
+			// width: auto;
 		}
 
 		@include media-breakpoint-down(sm) {
-			padding: 80px 20px;
+			padding-top: 80px;
+			padding-bottom: 80px;
+			padding-right: 20px;
+			padding-left: 20px;
 			margin: 0;
 			// width: auto;
 		}
@@ -45,6 +56,10 @@
 			margin-left: 163px;
 			// padding-left: 120px;
 
+			@include media-breakpoint-down(xl) {
+				margin-left: 60px;
+				// margin: 0 100px;
+			}
 			@include media-breakpoint-down(lg) {
 				margin-left: 0;
 				margin: 0 100px;
@@ -65,7 +80,7 @@
 		padding: 0;
 		margin: 0;
 
-		@include media-breakpoint-down(lg) {
+		@include media-breakpoint-down(xl) {
 			font-size: 28px;
 		}
 
@@ -73,20 +88,21 @@
 			content: '';
 			display: block;
 			margin-top: 40px;
+			margin-bottom: 40px;
 			width: 100px;
 			height: 3px;
 			background: linear-gradient(to right, $rose 70%, map-get($indigo, light));
 			padding: 0;
 
-			@include media-breakpoint-down(lg) {
+			@include media-breakpoint-down(xl) {
 				margin-top: 20px;
+				margin-bottom: 20px;
 			}
 		}
 	}
 
 	&-description {
 		margin: 0;
-		margin-top: 40px;
 		font-family: $fontSecondary;
 		font-size: 18px;
 		color: map-get($gray, darken);
@@ -94,9 +110,13 @@
 		padding: 0;
 		max-width: 900px;
 		line-height: 1.6;
+		margin-bottom: 25px;
 
+		@include media-breakpoint-down(xl) {
+			width: 360px;
+			font-size: 16px;
+		}
 		@include media-breakpoint-down(lg) {
-			margin-top: 10px;
 			// width: 130px;
 			font-size: 15px;
 		}
@@ -116,6 +136,9 @@
 		object-fit: cover;
 		width: 100%;
 
+		@include media-breakpoint-down(xl) {
+			height: 466.18px;
+		}
 		@include media-breakpoint-down(lg) {
 			height: 500px;
 		}
