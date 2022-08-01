@@ -8587,6 +8587,7 @@ textarea.form-control-lg {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     max-width: 700px;
+    color: #29293a;
     width: 600px;
     margin-bottom: 25px; }
     @media (max-width: 1199.98px) {
@@ -9203,11 +9204,72 @@ textarea.form-control-lg {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex: 1; }
-  @media (max-width: 1199.98px) {
-    .Navbar {
-      flex-direction: column;
-      align-items: flex-start; } }
+  position: relative; }
+  .Navbar-input + .Navbar-label {
+    position: absolute;
+    height: 20px;
+    width: 15px;
+    z-index: 5; }
+    .Navbar-input + .Navbar-label .span {
+      position: relative;
+      width: 15px;
+      height: 2px;
+      top: 50%;
+      margin-top: -1px;
+      left: 0;
+      display: block;
+      background: #838386;
+      transition: 0.5s; }
+    .Navbar-input + .Navbar-label .first-span {
+      top: 3px; }
+    .Navbar-input + .Navbar-label .third-span {
+      top: 16px; }
+  .Navbar-label:hover {
+    cursor: pointer; }
+  .Navbar-input:checked + .Navbar-label .span {
+    opacity: 0;
+    top: 50%; }
+  .Navbar-input:checked + .Navbar-label .first-span {
+    opacity: 1;
+    transform: rotate(405deg); }
+  .Navbar-input:checked + .Navbar-label .third-span {
+    opacity: 1;
+    transform: rotate(-405deg); }
+  .Navbar-input ~ .Navbar-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden; }
+    .Navbar-input ~ .Navbar-links .links {
+      list-style: none;
+      text-align: center;
+      position: absolute;
+      top: 35%;
+      left: 20%;
+      right: 20%; }
+    .Navbar-input ~ .Navbar-links .Navbar-link {
+      opacity: 1;
+      transition: 0.5s;
+      transition-delay: 0s; }
+    .Navbar-input ~ .Navbar-links .Navbar-item {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ededed;
+      font-weight: 700;
+      font-family: sans-serif;
+      display: block;
+      padding: 30px; }
+  .Navbar-input:checked ~ .Navbar-links {
+    height: 100%;
+    transition-delay: 0s; }
+    .Navbar-input:checked ~ .Navbar-links .links .Navbar-link {
+      opacity: 1;
+      transition-delay: 0.5s; }
   .Navbar-copyright {
     border: none;
     text-align: end;
@@ -9228,53 +9290,6 @@ textarea.form-control-lg {
     @media (max-width: 1199.98px) {
       .Navbar-copyright {
         font-size: 14px; } }
-  .Navbar-icon, .Navbar-label {
-    display: none; }
-  @media (max-width: 991.98px) {
-    .Navbar-icon:checked ~ .Navbar-links {
-      display: flex; } }
-  @media (max-width: 575.98px) {
-    .Navbar-icon:checked ~ .Navbar-links {
-      display: block; } }
-  @media (max-width: 575.98px) {
-    .Navbar-label {
-      display: inline-block; } }
-  .Navbar-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 720px;
-    width: 710px;
-    margin-bottom: 0; }
-    @media (max-width: 1199.98px) {
-      .Navbar-links {
-        width: 640px; } }
-    @media (max-width: 575.98px) {
-      .Navbar-links {
-        display: none;
-        margin-left: 0px;
-        width: 100px; } }
-  .Navbar-link {
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 2px; }
-    @media (max-width: 1199.98px) {
-      .Navbar-link {
-        font-size: 15px; } }
-    @media (max-width: 575.98px) {
-      .Navbar-link {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 4px 0px; } }
-    .Navbar-link:hover {
-      color: #981df0; }
 
 .HomeContact {
   background: linear-gradient(to right, #6d0eb1 20%, #ed1c94);
