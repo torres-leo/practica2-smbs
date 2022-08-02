@@ -9,7 +9,7 @@
 	align-items: center;
 
 	@include media-breakpoint-down(lg) {
-		margin-top: 5px;
+		margin-top: 0;
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -18,6 +18,7 @@
 		display: none;
 		@include media-breakpoint-down(md) {
 			display: block;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -47,7 +48,7 @@
 			font-family: $fontPrimary;
 			font-size: 18px;
 			font-weight: 300;
-			letter-spacing: 2px;
+			letter-spacing: 0.1em;
 
 			&:hover {
 				color: map-get($indigo, light);
@@ -69,6 +70,7 @@
 			font-size: 18px;
 			font-family: $fontSecondary;
 			font-weight: 300;
+			letter-spacing: 0.02em;
 		}
 
 		@include media-breakpoint-down(xl) {
@@ -76,19 +78,20 @@
 		}
 	}
 
-	input {
+	&-input {
 		position: absolute;
 		height: 23px;
 		width: 20px;
 		opacity: 0;
 	}
-	input + label {
+
+	&-input + &-label {
 		position: relative;
 		height: 20px;
 		width: 19px;
 		z-index: 5;
 		margin-top: 2px;
-		span {
+		.line {
 			position: absolute;
 			width: 100%;
 			height: 2px;
@@ -97,38 +100,41 @@
 			display: block;
 			background: map-get($gray, darken);
 			transition: 0.5s;
-		}
-		span:first-child {
-			top: 3px;
-		}
-		span:last-child {
-			top: 16px;
+			&:first-child {
+				top: 3px;
+			}
+			&:last-child {
+				top: 16px;
+			}
 		}
 	}
 
-	label:hover {
-		cursor: pointer;
+	&-label {
+		&:hover {
+			cursor: pointer;
+		}
 	}
-	input:checked + label {
-		span {
+
+	&-input:checked + &-label {
+		.line {
 			opacity: 0;
 			top: 50%;
-		}
-		span:first-child {
-			opacity: 1;
-			transform: rotate(405deg);
-		}
-		span:last-child {
-			opacity: 1;
-			transform: rotate(-405deg);
+			&:first-child {
+				opacity: 1;
+				transform: rotate(405deg);
+			}
+			&:last-child {
+				opacity: 1;
+				transform: rotate(-405deg);
+			}
 		}
 	}
 
-	nav {
+	&-links {
 		display: flex;
 		opacity: 1;
 	}
-	input ~ nav {
+	&-input ~ &-links {
 		position: relative;
 		width: 100%;
 		height: 100px;
@@ -137,36 +143,37 @@
 		transition-delay: 2.5s;
 		display: none;
 		overflow: hidden;
-		> ul {
-			text-align: center;
-			position: relative;
-			list-style: none;
-			> li {
-				opacity: 1;
-				transition: 0.5s;
-				transition-delay: 2s;
-				> a {
-					text-decoration: none;
-					text-transform: uppercase;
-					color: $white;
-					font-weight: 300;
-					font-family: sans-serif;
-					display: block;
-					text-align: start;
-					padding: 2px;
-				}
-			}
-		}
 	}
-	input:checked ~ nav {
+	.menuHam {
+		text-align: center;
+		position: relative;
+		list-style: none;
+	}
+	.linkHam {
+		opacity: 1;
+		transition: 0.5s;
+		transition-delay: 2s;
+	}
+	.item {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: $fontPrimary;
+		color: $white;
+		font-weight: 300;
+		display: block;
+		text-align: start;
+		padding: 2px;
+		letter-spacing: 0.1em;
+	}
+	&-input:checked ~ &-links {
 		height: 100%;
 		transition-delay: 2s;
 		display: block;
-		> ul {
-			> li {
-				opacity: 1;
-				transition-delay: 3.5s;
-			}
+		// .links {
+		.linkHam {
+			opacity: 1;
+			transition-delay: 3.5s;
+			// }
 		}
 	}
 }

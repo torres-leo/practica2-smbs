@@ -8549,6 +8549,7 @@ textarea.form-control-lg {
     width: 100%;
     font-size: 48px;
     font-family: "Oswald", sans-serif;
+    color: #29293a;
     font-weight: 400;
     text-align: center;
     line-height: 1.45;
@@ -8664,6 +8665,7 @@ textarea.form-control-lg {
   .article-title {
     font-size: 48px;
     font-family: "Oswald", sans-serif;
+    color: #29293a;
     font-weight: 400;
     letter-spacing: 3px;
     padding: 0;
@@ -8842,6 +8844,7 @@ textarea.form-control-lg {
     text-transform: uppercase;
     font-size: 48px;
     font-family: "Oswald", sans-serif;
+    color: #29293a;
     text-align: center;
     font-weight: 400;
     letter-spacing: 2px;
@@ -8921,7 +8924,7 @@ textarea.form-control-lg {
         cursor: pointer; }
 
 .Footer {
-  padding: 90px 50px 50px;
+  padding: 90px 67px 50px;
   background: #29293a;
   color: #ffffff;
   display: flex;
@@ -9048,7 +9051,7 @@ textarea.form-control-lg {
       width: 240px; }
       @media (max-width: 991.98px) {
         .FooterContact.text {
-          width: 350px;
+          width: 300px;
           font-size: 15px; } }
       .FooterContact.text:hover {
         color: #981df0;
@@ -9080,19 +9083,23 @@ textarea.form-control-lg {
         font-size: 20px; }
   .FooterNews-form {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     border-radius: 35px;
     align-items: center;
-    background-color: #ffffff;
-    width: 200px; }
+    background-color: #ffffff; }
   .FooterNews-text {
     font-size: 18px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    max-width: 360px;
     width: 360px; }
     @media (max-width: 991.98px) {
       .FooterNews-text {
-        font-size: 15px; } }
+        font-size: 15px;
+        width: 320px; } }
+    @media (max-width: 575.98px) {
+      .FooterNews-text {
+        width: 300px; } }
   .FooterNews-input {
     background-color: transparent;
     border: none;
@@ -9102,7 +9109,8 @@ textarea.form-control-lg {
     font-weight: 300;
     border-radius: 35px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 24px;
+    font-size: 15px;
     outline: none; }
 
 /* The Modal (background) */
@@ -9204,14 +9212,15 @@ textarea.form-control-lg {
   align-items: center; }
   @media (max-width: 991.98px) {
     .Navbar {
-      margin-top: 5px;
+      margin-top: 0;
       flex-direction: column;
       align-items: flex-start; } }
   .Navbar-one {
     display: none; }
     @media (max-width: 767.98px) {
       .Navbar-one {
-        display: block; } }
+        display: block;
+        margin-bottom: 20px; } }
   .Navbar-two {
     width: 600px; }
     .Navbar-two .links {
@@ -9233,7 +9242,7 @@ textarea.form-control-lg {
       font-family: "Oswald", sans-serif;
       font-size: 18px;
       font-weight: 300;
-      letter-spacing: 2px; }
+      letter-spacing: 0.1em; }
       .Navbar-two .link:hover {
         color: #981df0; }
   .Navbar-copyright {
@@ -9248,22 +9257,23 @@ textarea.form-control-lg {
       color: #838386;
       font-size: 18px;
       font-family: "Lato", sans-serif;
-      font-weight: 300; }
+      font-weight: 300;
+      letter-spacing: 0.02em; }
     @media (max-width: 1199.98px) {
       .Navbar-copyright {
         font-size: 14px; } }
-  .Navbar input {
+  .Navbar-input {
     position: absolute;
     height: 23px;
     width: 20px;
     opacity: 0; }
-  .Navbar input + label {
+  .Navbar-input + .Navbar-label {
     position: relative;
     height: 20px;
     width: 19px;
     z-index: 5;
     margin-top: 2px; }
-    .Navbar input + label span {
+    .Navbar-input + .Navbar-label .line {
       position: absolute;
       width: 100%;
       height: 2px;
@@ -9272,25 +9282,25 @@ textarea.form-control-lg {
       display: block;
       background: #838386;
       transition: 0.5s; }
-    .Navbar input + label span:first-child {
-      top: 3px; }
-    .Navbar input + label span:last-child {
-      top: 16px; }
-  .Navbar label:hover {
+      .Navbar-input + .Navbar-label .line:first-child {
+        top: 3px; }
+      .Navbar-input + .Navbar-label .line:last-child {
+        top: 16px; }
+  .Navbar-label:hover {
     cursor: pointer; }
-  .Navbar input:checked + label span {
+  .Navbar-input:checked + .Navbar-label .line {
     opacity: 0;
     top: 50%; }
-  .Navbar input:checked + label span:first-child {
-    opacity: 1;
-    transform: rotate(405deg); }
-  .Navbar input:checked + label span:last-child {
-    opacity: 1;
-    transform: rotate(-405deg); }
-  .Navbar nav {
+    .Navbar-input:checked + .Navbar-label .line:first-child {
+      opacity: 1;
+      transform: rotate(405deg); }
+    .Navbar-input:checked + .Navbar-label .line:last-child {
+      opacity: 1;
+      transform: rotate(-405deg); }
+  .Navbar-links {
     display: flex;
     opacity: 1; }
-  .Navbar input ~ nav {
+  .Navbar-input ~ .Navbar-links {
     position: relative;
     width: 100%;
     height: 100px;
@@ -9299,28 +9309,29 @@ textarea.form-control-lg {
     transition-delay: 2.5s;
     display: none;
     overflow: hidden; }
-    .Navbar input ~ nav > ul {
-      text-align: center;
-      position: relative;
-      list-style: none; }
-      .Navbar input ~ nav > ul > li {
-        opacity: 1;
-        transition: 0.5s;
-        transition-delay: 2s; }
-        .Navbar input ~ nav > ul > li > a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: #ffffff;
-          font-weight: 300;
-          font-family: sans-serif;
-          display: block;
-          text-align: start;
-          padding: 2px; }
-  .Navbar input:checked ~ nav {
+  .Navbar .menuHam {
+    text-align: center;
+    position: relative;
+    list-style: none; }
+  .Navbar .linkHam {
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 2s; }
+  .Navbar .item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+    display: block;
+    text-align: start;
+    padding: 2px;
+    letter-spacing: 0.1em; }
+  .Navbar-input:checked ~ .Navbar-links {
     height: 100%;
     transition-delay: 2s;
     display: block; }
-    .Navbar input:checked ~ nav > ul > li {
+    .Navbar-input:checked ~ .Navbar-links .linkHam {
       opacity: 1;
       transition-delay: 3.5s; }
 
@@ -9435,6 +9446,7 @@ textarea.form-control-lg {
   .HomePanel-title {
     font-family: "Oswald", sans-serif;
     font-size: 48px;
+    color: #29293a;
     letter-spacing: 2px;
     font-weight: 400;
     margin-bottom: 0; }

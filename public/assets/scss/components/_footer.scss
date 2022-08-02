@@ -1,5 +1,5 @@
 .Footer {
-	padding: 90px 50px 50px;
+	padding: 90px 67px 50px;
 	background: $black;
 	color: $white;
 	display: flex;
@@ -16,10 +16,6 @@
 		padding-bottom: 40px;
 	}
 
-	// @include media-breakpoint-down(lg) {
-	// 	padding-left: 20px;
-	// }
-
 	&-titles {
 		font-family: $fontPrimary;
 		text-transform: uppercase;
@@ -30,18 +26,9 @@
 	}
 
 	&-content {
-		// position: relative;
-		// width: 100%;
-		// padding: 0 15px;
-		// margin-bottom: 50px;
-
 		@include media-breakpoint-down(xl) {
 			margin-bottom: 50px;
-			// 	padding-left: 15px;
 		}
-		// @include media-breakpoint-down(sm) {
-		// 	margin-top: 0;
-		// }
 	}
 
 	&About {
@@ -177,7 +164,7 @@
 			width: 240px;
 
 			@include media-breakpoint-down(lg) {
-				width: 350px;
+				width: 300px;
 				font-size: 15px;
 			}
 
@@ -240,21 +227,26 @@
 
 		&-form {
 			display: flex;
-			justify-content: flex-start;
+			justify-content: space-between;
 			border-radius: 35px;
 			align-items: center;
 			background-color: $white;
-			width: 200px;
+			// width: 200px;
 		}
 
 		&-text {
 			font-size: 18px;
 			font-family: $fontSecondary;
 			font-weight: 300;
+			max-width: 360px;
 			width: 360px;
 
 			@include media-breakpoint-down(lg) {
 				font-size: 15px;
+				width: 320px;
+			}
+			@include media-breakpoint-down(sm) {
+				width: 300px;
 			}
 		}
 
@@ -268,7 +260,8 @@
 			// border: none;
 			border-radius: 35px;
 			text-align: left;
-			padding-left: 20px;
+			padding-left: 24px;
+			font-size: 15px;
 			outline: none;
 		}
 	}
