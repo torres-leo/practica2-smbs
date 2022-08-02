@@ -236,14 +236,15 @@
 	}
 
 	&News {
-		width: 100%;
+		// width: 100%;
 
 		&-form {
 			display: flex;
-			justify-content: space-between;
+			justify-content: flex-start;
 			border-radius: 35px;
 			align-items: center;
 			background-color: $white;
+			width: 200px;
 		}
 
 		&-text {
