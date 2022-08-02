@@ -9030,7 +9030,7 @@ textarea.form-control-lg {
   .FooterContact {
     padding: 0;
     padding-right: 40px;
-    margin-bottom: 0; }
+    margin-bottom: 35px; }
     @media (max-width: 991.98px) {
       .FooterContact {
         padding-right: 0; } }
@@ -9070,7 +9070,6 @@ textarea.form-control-lg {
         color: #981df0;
         cursor: pointer; }
     .FooterContact-socials {
-      margin-top: 35px;
       display: flex;
       padding-left: 6px;
       justify-content: space-between;

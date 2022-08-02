@@ -127,7 +127,7 @@
 	&Contact {
 		padding: 0;
 		padding-right: 40px;
-		margin-bottom: 0;
+		margin-bottom: 35px;
 
 		@include media-breakpoint-down(lg) {
 			padding-right: 0;
@@ -179,7 +179,6 @@
 		}
 
 		&-socials {
-			margin-top: 35px;
 			display: flex;
 			padding-left: 6px;
 			justify-content: space-between;
