@@ -149,8 +149,9 @@
 			font-family: $fontPrimary;
 			font-size: 48px;
 			color: $black;
-			letter-spacing: 2px;
+			letter-spacing: 0.06em;
 			font-weight: 400;
+			line-height: 1.375;
 			margin-bottom: 0;
 
 			@include media-breakpoint-down(lg) {
@@ -179,6 +180,7 @@
 			color: $black;
 			font-weight: 300;
 			margin-bottom: 20px;
+			line-height: 1.41667;
 			width: 550px;
 
 			@include media-breakpoint-down(lg) {
@@ -194,6 +196,7 @@
 				font-size: 18px;
 				color: map-get($gray, darken);
 				margin-bottom: 25px;
+				line-height: 1.55556;
 
 				@include media-breakpoint-down(lg) {
 					font-size: 15px;

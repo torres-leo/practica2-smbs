@@ -4,7 +4,7 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Oswald:wght@200;300;400;500&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8416,7 +8416,8 @@ textarea.form-control-lg {
     .cards-container .card-heading {
       font-size: 24px;
       font-family: "Lato", sans-serif;
-      color: #29293a; }
+      color: #29293a;
+      font-weight: 400; }
       @media (max-width: 991.98px) {
         .cards-container .card-heading {
           font-size: 19px; } }
@@ -8440,7 +8441,7 @@ textarea.form-control-lg {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       color: #838386;
-      line-height: 1.6; }
+      line-height: 1.55556; }
       @media (max-width: 991.98px) {
         .cards-container .card-text {
           font-size: 15px;
@@ -8455,7 +8456,8 @@ textarea.form-control-lg {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  line-height: 1.3;
+  letter-spacing: 0.12em;
   background-color: #ed1c94;
   color: #ffffff;
   padding: 14px 38px;
@@ -8552,8 +8554,8 @@ textarea.form-control-lg {
     color: #29293a;
     font-weight: 400;
     text-align: center;
-    line-height: 1.45;
-    letter-spacing: 2px;
+    line-height: 1.375;
+    letter-spacing: 0.06em;
     margin-bottom: 0; }
     @media (max-width: 1199.98px) {
       .Hero-title {
@@ -8564,7 +8566,8 @@ textarea.form-control-lg {
         font-size: 24px;
         width: 180px; } }
     .Hero-title .lighter {
-      font-weight: 200; }
+      font-weight: 200;
+      line-height: 1.375; }
     .Hero-title::after {
       content: '';
       display: block;
@@ -8590,13 +8593,13 @@ textarea.form-control-lg {
     max-width: 700px;
     color: #29293a;
     width: 600px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    line-height: 1.41667; }
     @media (max-width: 1199.98px) {
       .Hero-description {
         margin-top: 10px;
         font-size: 19px;
         width: 700px;
-        line-height: 1.41667;
         width: 500px; } }
     @media (max-width: 575.98px) {
       .Hero-description {
@@ -8667,7 +8670,8 @@ textarea.form-control-lg {
     font-family: "Oswald", sans-serif;
     color: #29293a;
     font-weight: 400;
-    letter-spacing: 3px;
+    line-height: 1.375;
+    letter-spacing: 0.06em;
     padding: 0;
     margin: 0; }
     @media (max-width: 1199.98px) {
@@ -8694,7 +8698,7 @@ textarea.form-control-lg {
     font-weight: 300;
     padding: 0;
     max-width: 900px;
-    line-height: 1.6;
+    line-height: 1.55556;
     margin-bottom: 25px; }
     @media (max-width: 1199.98px) {
       .article-description {
@@ -8757,8 +8761,9 @@ textarea.form-control-lg {
       font-family: "Oswald", sans-serif;
       font-weight: 400;
       color: #ffec17;
+      line-height: 1.375;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 0.06em;
       margin-bottom: 20px; }
       @media (max-width: 1199.98px) {
         .banner .content-consultation {
@@ -8773,7 +8778,7 @@ textarea.form-control-lg {
       margin: 0;
       color: #ffffff;
       font-weight: 300;
-      line-height: 1.6; }
+      line-height: 1.55556; }
       @media (max-width: 1199.98px) {
         .banner .content-text {
           font-size: 19px;
@@ -8791,6 +8796,7 @@ textarea.form-control-lg {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     color: #29293a;
+    line-height: 1.375;
     letter-spacing: 0.06em;
     margin-bottom: 0; }
     @media (max-width: 991.98px) {
@@ -8847,7 +8853,8 @@ textarea.form-control-lg {
     color: #29293a;
     text-align: center;
     font-weight: 400;
-    letter-spacing: 2px;
+    line-height: 1.375;
+    letter-spacing: 0.06em;
     margin-bottom: 40px; }
     .team-title::after {
       content: '';
@@ -8890,6 +8897,7 @@ textarea.form-control-lg {
     font-size: 24px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+    line-height: 1.41667;
     color: #ed1c94;
     text-align: center;
     transition: color ease-in-out 0.2s; }
@@ -8901,6 +8909,7 @@ textarea.form-control-lg {
     color: #838386;
     font-style: italic;
     font-weight: 300;
+    line-height: 1.55556;
     margin-bottom: 15px; }
   .team .container-icons {
     display: flex;
@@ -8944,7 +8953,8 @@ textarea.form-control-lg {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 400;
-    letter-spacing: 2px;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
     margin-bottom: 30px; }
   @media (max-width: 1199.98px) {
     .Footer-content {
@@ -8956,6 +8966,7 @@ textarea.form-control-lg {
     font-family: "Lato", sans-serif;
     font-size: 18px;
     font-weight: 300;
+    line-height: 1.55556;
     max-width: 600px;
     width: 420px; }
     @media (max-width: 991.98px) {
@@ -9046,9 +9057,11 @@ textarea.form-control-lg {
       color: #ffffff;
       font-size: 18px;
       font-family: "Lato", sans-serif;
+      line-height: 1.55556;
+      letter-spacing: 0.02em;
       font-weight: 300;
       transition: color ease-in-out 0.2s;
-      width: 240px; }
+      width: 260px; }
       @media (max-width: 991.98px) {
         .FooterContact.text {
           width: 300px;
@@ -9091,6 +9104,8 @@ textarea.form-control-lg {
     font-size: 18px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.55556;
     max-width: 360px;
     width: 360px; }
     @media (max-width: 991.98px) {
@@ -9110,8 +9125,11 @@ textarea.form-control-lg {
     border-radius: 35px;
     text-align: left;
     padding-left: 24px;
-    font-size: 15px;
+    font-size: 18px;
     outline: none; }
+    @media (max-width: 991.98px) {
+      .FooterNews-input {
+        font-size: 15px; } }
 
 /* The Modal (background) */
 .modal {
@@ -9242,7 +9260,8 @@ textarea.form-control-lg {
       font-family: "Oswald", sans-serif;
       font-size: 18px;
       font-weight: 300;
-      letter-spacing: 0.1em; }
+      letter-spacing: 0.1em;
+      transition: color ease-in-out 0.3s; }
       .Navbar-two .link:hover {
         color: #981df0; }
   .Navbar-copyright {
@@ -9447,8 +9466,9 @@ textarea.form-control-lg {
     font-family: "Oswald", sans-serif;
     font-size: 48px;
     color: #29293a;
-    letter-spacing: 2px;
+    letter-spacing: 0.06em;
     font-weight: 400;
+    line-height: 1.375;
     margin-bottom: 0; }
     @media (max-width: 991.98px) {
       .HomePanel-title {
@@ -9471,6 +9491,7 @@ textarea.form-control-lg {
     color: #29293a;
     font-weight: 300;
     margin-bottom: 20px;
+    line-height: 1.41667;
     width: 550px; }
     @media (max-width: 991.98px) {
       .HomePanel-description {
@@ -9482,7 +9503,8 @@ textarea.form-control-lg {
     .HomePanel-description.light {
       font-size: 18px;
       color: #838386;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      line-height: 1.55556; }
       @media (max-width: 991.98px) {
         .HomePanel-description.light {
           font-size: 15px; } }

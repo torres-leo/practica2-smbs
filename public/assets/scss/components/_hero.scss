@@ -47,8 +47,8 @@
 		color: $black;
 		font-weight: 400;
 		text-align: center;
-		line-height: 1.45;
-		letter-spacing: 2px;
+		line-height: 1.375;
+		letter-spacing: 0.06em;
 		margin-bottom: 0;
 
 		@include media-breakpoint-down(xl) {
@@ -63,6 +63,7 @@
 
 		.lighter {
 			font-weight: 200;
+			line-height: 1.375;
 		}
 
 		&::after {
@@ -96,12 +97,12 @@
 		color: $black;
 		width: 600px;
 		margin-bottom: 25px;
+		line-height: 1.41667;
 
 		@include media-breakpoint-down(xl) {
 			margin-top: 10px;
 			font-size: 19px;
 			width: 700px;
-			line-height: 1.41667;
 			width: 500px;
 		}
 		@include media-breakpoint-down(sm) {

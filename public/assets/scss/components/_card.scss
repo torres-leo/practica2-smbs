@@ -57,6 +57,7 @@
 			font-size: 24px;
 			font-family: $fontSecondary;
 			color: $black;
+			font-weight: 400;
 
 			@include media-breakpoint-down(lg) {
 				font-size: 19px;
@@ -87,17 +88,12 @@
 			font-family: $fontSecondary;
 			font-weight: 300;
 			color: map-get($gray, darken);
-			line-height: 1.6;
+			line-height: 1.55556;
 
 			@include media-breakpoint-down(lg) {
 				font-size: 15px;
 				max-width: 320px;
 			}
-
-			// @include media-breakpoint-down(sm) {
-			// 	margin-top: 22px;
-			// 	line-height: 1.6;
-			// }
 		}
 	}
 }

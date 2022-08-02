@@ -35,8 +35,9 @@
 			font-family: $fontPrimary;
 			font-weight: 400;
 			color: $yellow;
+			line-height: 1.375;
 			text-transform: uppercase;
-			letter-spacing: 2px;
+			letter-spacing: 0.06em;
 			margin-bottom: 20px;
 
 			@include media-breakpoint-down(xl) {
@@ -55,7 +56,7 @@
 			margin: 0;
 			color: $white;
 			font-weight: 300;
-			line-height: 1.6;
+			line-height: 1.55556;
 
 			@include media-breakpoint-down(xl) {
 				// width: 400px;
@@ -80,6 +81,7 @@
 		font-family: $fontPrimary;
 		font-weight: 400;
 		color: $black;
+		line-height: 1.375;
 		letter-spacing: 0.06em;
 		margin-bottom: 0;
 

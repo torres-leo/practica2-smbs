@@ -83,7 +83,8 @@
 		font-family: $fontPrimary;
 		color: $black;
 		font-weight: 400;
-		letter-spacing: 3px;
+		line-height: 1.375;
+		letter-spacing: 0.06em;
 		padding: 0;
 		margin: 0;
 
@@ -116,7 +117,7 @@
 		font-weight: 300;
 		padding: 0;
 		max-width: 900px;
-		line-height: 1.6;
+		line-height: 1.55556;
 		margin-bottom: 25px;
 
 		@include media-breakpoint-down(xl) {
